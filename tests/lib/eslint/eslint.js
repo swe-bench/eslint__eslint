@@ -9028,7 +9028,7 @@ describe("ESLint", () => {
                     cwd: workDir
                 });
                 const results = await eslint.lintFiles(["."]);
-
+console.log(results);
                 assert.strictEqual(results.length, 2);
                 assert.strictEqual(results[0].filePath, path.resolve(workDir, workDirName, "eslint.config.cjs"));
                 assert.strictEqual(results[0].messages.length, 0);
